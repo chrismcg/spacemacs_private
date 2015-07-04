@@ -1,3 +1,11 @@
+# My private spacemacs layers and .spacemacs
+
+A few layers that are useful to me
+
+Original README text below
+
+---
+
 # Private repository
 
 The content of this directory is ignored by Git. This is the default place
