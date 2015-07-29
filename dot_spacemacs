@@ -192,19 +192,6 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
   global-company-mode
-  ;; Unset the M-x window keys so I can have M-3 for #
-  (define-key window-numbering-keymap "\M-0" nil)
-  (define-key window-numbering-keymap "\M-1" nil)
-  (define-key window-numbering-keymap "\M-2" nil)
-  (define-key window-numbering-keymap "\M-3" nil)
-  (define-key window-numbering-keymap "\M-4" nil)
-  (define-key window-numbering-keymap "\M-5" nil)
-  (define-key window-numbering-keymap "\M-6" nil)
-  (define-key window-numbering-keymap "\M-7" nil)
-  (define-key window-numbering-keymap "\M-8" nil)
-  (define-key window-numbering-keymap "\M-9" nil)
-  ;; And map so I can insert #
-  (global-set-key (kbd "M-3") `(lambda () (interactive) (insert "#")))
 
   ;; from https://github.com/TheBB/dotfiles/blob/master/emacs/spacemacs.el
   (add-hook 'text-mode-hook 'auto-fill-mode)
@@ -230,6 +217,7 @@ layers configuration."
  '(ahs-idle-interval 0.25)
  '(ahs-idle-timer 0 t)
  '(ahs-inhibit-face-list nil)
+ '(mac-right-option-modifier nil)
  '(paradox-github-token t)
  '(ring-bell-function (quote ignore) t))
 (custom-set-faces
