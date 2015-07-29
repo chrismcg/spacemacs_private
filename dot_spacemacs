@@ -175,6 +175,7 @@ before layers configuration."
    standard-indent 2
    js2-basic-offset 2
    git-magit-status-fullscreen t
+   rake-completion-system 'default
    )
 
   (add-to-list 'auto-mode-alist '("\\.eex\\'" . web-mode))
