@@ -193,6 +193,16 @@ before layers configuration."
 layers configuration."
   global-company-mode
 
+  (evil-leader/set-key-for-mode 'elixir-mode
+    "mtr" 'alchemist-mix-rerun-last-test
+    "mtn" 'alchemist-test-mode-jump-to-next-test
+    "mtp" 'alchemist-test-mode-jump-to-previous-test
+    "mtl" 'alchemist-test-mode-list-tests
+    )
+
+  ;; my custom SPC o bindings
+  (evil-leader/set-key "oat" 'alchemist-mix-test)
+
   ;; from https://github.com/TheBB/dotfiles/blob/master/emacs/spacemacs.el
   (add-hook 'text-mode-hook 'auto-fill-mode)
   (add-hook 'org-mode-hook 'auto-fill-mode)
