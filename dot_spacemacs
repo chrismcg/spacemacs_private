@@ -176,7 +176,12 @@ before layers configuration."
    js2-basic-offset 2
    )
   (add-to-list 'auto-mode-alist '("\\.eex\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.hbs\\'" . mustache-mode))
+  (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
+  (defadvice web-mode-highlight-part (around tweak-jsx activate)
+    (if (equal web-mode-content-type "jsx")
+        (let ((web-mode-enable-part-face nil))
+          ad-do-it)
+      ad-do-it))
   )
 
 (defun dotspacemacs/config ()
