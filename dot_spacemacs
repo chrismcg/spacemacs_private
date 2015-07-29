@@ -48,6 +48,7 @@
      (syntax-checking :variables
                       syntax-checking-enable-tooltips nil)
      themes-megapack
+     unimpaired
      version-control
      )
    ;; List of additional packages that will be installed wihout being
