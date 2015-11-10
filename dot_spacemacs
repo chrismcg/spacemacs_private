@@ -230,6 +230,8 @@ user code."
    rake-completion-system 'default
    mac-right-option-modifier nil
    enh-ruby-add-encoding-comment-on-save nil
+   ruby-insert-encoding-magic-comment nil
+   ruby-use-encoding-map nil
    ;; this allows ruby-toggle-block to work
    enh-ruby-use-ruby-mode-show-parens-config t
    projectile-rails-expand-snippet nil
