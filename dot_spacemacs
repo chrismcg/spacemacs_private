@@ -240,7 +240,6 @@ user code."
    alchemist-hooks-test-on-save t
    solarized-high-contrast-mode-line t
    solarized-distinct-fringe-background t
-   solarized-emphasize-indicators nil
    )
 
   (add-to-list 'auto-mode-alist '("\\.eex\\'" . web-mode))
